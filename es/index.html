@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GO Mods</title>
+  <link rel="alternate" hreflang="en" href="https://gomods1.github.io/">
+  <meta name="description" content="GO Mods: mods de accesibilidad con lector de pantalla para que los jugadores ciegos puedan jugar a los mismos juegos que todo el mundo.">
+  <style>
+    :root {
+      --bg: #fdfcf8;
+      --fg: #1c1c1c;
+      --muted: #555;
+      --accent: #0b5cad;
+      --accent-fg: #fff;
+      --rule: #ddd8cc;
+      --note-bg: #fff4d6;
+      --note-border: #c98a00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --fg: #ececec;
+        --muted: #b4b4b4;
+        --accent: #7cb8ff;
+        --accent-fg: #0b1220;
+        --rule: #33363d;
+        --note-bg: #2b2412;
+        --note-border: #e0a82e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 1.125rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .skip {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      padding: .5rem 1rem;
+      background: var(--accent);
+      color: var(--accent-fg);
+      z-index: 10;
+    }
+    header, main, footer {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header { padding-top: 3rem; }
+    h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 .5rem; }
+    h2 {
+      font-size: 1.6rem;
+      margin: 3rem 0 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    h3 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+    .tagline { color: var(--muted); margin: 0 0 1.5rem; }
+    a { color: var(--accent); text-underline-offset: .15em; }
+    a:focus-visible, .button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .button {
+      display: inline-block;
+      padding: .6rem 1.2rem;
+      border-radius: .4rem;
+      background: var(--accent);
+      color: var(--accent-fg);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .note {
+      background: var(--note-bg);
+      border-left: 4px solid var(--note-border);
+      padding: .75rem 1rem;
+      font-weight: 600;
+    }
+    li { margin-bottom: .4rem; }
+    footer {
+      margin-top: 4rem;
+      padding-bottom: 3rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header>
+    <h1>GO Mods</h1>
+    <p class="tagline">Mods de accesibilidad para jugadores ciegos, de Oriol Gómez y Guillem León.</p>
+    <p><a class="button" href="https://www.patreon.com/oriolgomez">Apoya a Oriol Gómez en Patreon</a></p>
+    <p><a href="../" hreflang="en" lang="en">Read in English</a></p>
+  </header>
+
+  <main id="main">
+    <p class="note">¡<a href="#aviso-ia">Más abajo</a> tienes la declaración y el aviso completos sobre IA/LLM!</p>
+
+    <p>¡Hola! Somos Oriol Gómez y Guillem León, y estamos aquí para ofrecer a los jugadores invidentes una experiencia divertida con los mismos juegos a los que juega todo el mundo.</p>
+
+    <p>Podemos mantener un debate matizado sobre la ética del entrenamiento y la inferencia de los LLM cualquier día que nos digáis —y, sin duda, lo haremos si así lo deseáis, ¡es muy importante!—. Pero, a efectos de este espacio, los LLM han sido una herramienta inestimable y un paso enorme en el empeño de hacer que más videojuegos sean accesibles para ciegos. La cantidad de recursos que se invierte en la creación de videojuegos es mucho mayor que la destinada a los audiojuegos, y los videojuegos los juegan muchas más personas que los audiojuegos. Invertir en la igualdad de acceso a estos, nos permite disfrutar de experiencias más parecidas a las que tienen los gamers con ojos que les funcionan. Además de la gran satisfacción personal que esto supone, también ayuda a reducir significativamente la brecha entre los videojuegos para ciegos y videntes, ¡lo que nos permite participar además en el aspecto cooperativo!</p>
+
+    <p>Nos apoyamos en los hombros de gigantes. Incluso antes de la adopción generalizada de los modelos de lenguaje a gran escala (LLM), proyectos como «Pokémon Crystal Access», «Stardew Access», «Say the Spire» y «Black Hole» (¡y unos cuantos (muchos) más!) ya brindaban accesibilidad para las personas ciegas a algunos de los principales juegos del mercado general/popular. Con la ayuda de agentes de programación por IA, hay una gran cantidad de juegos que están adquiriendo distintos niveles de accesibilidad a medida que pasan los días, mejoran los modelos y más gente se anima a desarrollar esos mods.</p>
+
+    <p>¡Estamos aquí para dar lo mejor de nosotros mismos y contribuir a este conjunto de forma significativa y exhaustiva!</p>
+
+    <h2 id="quienes-somos">¿Quiénes somos?</h2>
+
+    <h3 id="oriol">Oriol</h3>
+
+    <p><a href="https://www.patreon.com/oriolgomez">Apoya a Oriol en Patreon</a></p>
+
+    <p>Mi carrera en el desarrollo de videojuegos empezó más o menos en el 2011 con Muerte en la Carretera, o roadsplat. Ese fue el primero de muchos juegos: primero juegos de audio, luego juegos para iOS y, más tarde, algunos mods.</p>
+
+    <p>Tengo una pequeña página web dedicada a mis juegos, software y proyectos.</p>
+
+    <p>Desde el auge de la IA, me he encontrado programando un poco menos e inventando un poco más. He creado mods para varios juegos, entre los que se incluyen:</p>
+
+    <ul>
+      <li><a href="https://github.com/ogomez92/monster_tra11y">Monster Train</a>, un roguelike de estilo gótico sobre la gestión de unidades.</li>
+      <li><a href="https://github.com/ogomez92/SNKRX">SNKRX</a>, un shooter de arena y roguelike.</li>
+      <li><a href="https://github.com/ogomez92/blindfrost">Wildfrost</a>, un roguelike sobre criaturas cuquis que intentan matarse entre sí en un tablero cuadriculado.</li>
+      <li><a href="https://github.com/ogomez92/verbally_blind_cultist">Cultist Simulator</a>, un roguelike en el que hay que ganar seguidores y convertirse en un líder sectario.</li>
+    </ul>
+
+    <p>Cuando no estoy creando mods, me dedico a programar otros proyectos, leer, ver series interesantes o, por supuesto, jugar a juegos con mods desarrollados por otros, como Slay the Spire o Darkest Dungeon.</p>
+
+    <p>En este equipo, mi esperanza es seguir creando más mods, aportar nuevas ideas, los recursos y el impulso necesarios para experimentar con nuevos juegos y conceptos. Mi mayor baza aquí es encontrar soluciones creativas a los problemas y no rendirme fácilmente, así como mi deseo de ofrecer a nuestros usuarios (jugadores) aquello que más les va a gustar de un juego o un mod.</p>
+
+    <h3 id="guillem">Guillem</h3>
+
+    <p>Para daros unas pinceladas, soy <a href="https://guillemleonmusic.com">pianista y compositor</a> de profesión. Pero cuando me canso de estar sentado delante de un piano o de un DAW (lo cual ocurre más rápido y con más frecuencia de lo que me gustaría), los videojuegos son uno de mis pasatiempos favoritos.</p>
+
+    <p>Estoy dispuesto a probar cualquier juego al menos una vez, pero los roguelikes de prácticamente cualquier tipo son mi opción preferida en este momento.</p>
+
+    <p>En este equipo, mis insufribles tendencias perfeccionistas y puntillosas se convierten en mi mayor baza. Me encanta detectar inconsistencias, encontrar formas mejores y más eficientes de transmitir información, probar casos extremos y, sobre todo, asegurarme de que entiendo exactamente lo que está pasando en un juego.</p>
+
+    <h2 id="financiacion">¿A qué se destinará la financiación?</h2>
+
+    <p>Principalmente, a los costes de los LLM. Como verás en el aviso legal que figura a continuación, su capacidad de ingeniería inversa y su resistencia al tedioso trabajo de análisis los convierten en una herramienta muy útil en este ámbito. En el momento de redactar este texto, las suscripciones a los LLM son la forma más eficaz y asequible de acceder a ellos.</p>
+
+    <p>Además, estarás invirtiendo en el tiempo que dedicamos a las distintas fases del desarrollo de mods asistido por IA:</p>
+
+    <ul>
+      <li>Investigar juegos con potencial para la creación de mods</li>
+      <li>Evaluar las mejores formas de añadir accesibilidad con un cambio mínimo en la experiencia de juego</li>
+      <li>Proponer y supervisar un enfoque inicial</li>
+      <li>Probar el juego y anotar minuciosamente los errores, las incoherencias y las posibles mejoras</li>
+      <li>Depurar y ejecutar indicaciones para solucionarlos hasta que consideremos que la experiencia es divertida</li>
+      <li>Mantener los mods tras su lanzamiento, asegurándonos de que la gente esté al corriente de cualquier cambio.</li>
+    </ul>
+
+    <h2 id="que-obtendras">¿Qué obtendrás?</h2>
+
+    <p>De ahora en adelante, los patrocinadores tendrán acceso a los nuevos mods y a las actualizaciones importantes que mejoren la experiencia de usuario una semana antes de que se hagan públicos. Las correcciones de errores críticos se publicarán de inmediato, sin el periodo de espera de una semana. Los mods anteriores de Oriol (véase más arriba) formarán ahora parte del catálogo de GO Mods.</p>
+
+    <p>Los patrocinadores también tendrán acceso a un servidor de Discord para comentar los mods disponibles, sugerir nuevos juegos y mantenerse al día de nuestro trabajo.</p>
+
+    <p>Ninguno de nuestros mods estará nunca disponible exclusivamente mediante pago. Todo el código de los mods que creemos se pondrá a disposición del público tras el periodo de patrocinio, sin excepción.</p>
+
+    <p><a class="button" href="https://www.patreon.com/oriolgomez">Apoya a Oriol Gómez en Patreon</a></p>
+
+    <h2 id="aviso-ia">Aviso legal sobre la IA</h2>
+
+    <p>La gran mayoría de nuestro código, y sin duda el enfoque inicial de nuestros mods, está escrito por grandes modelos de lenguaje. No reclamamos la propiedad efectiva del código, solo la de las ideas de diseño.</p>
+
+    <p>Creemos que existe lo que se conoce como «uso legítimo» de la IA y reconocemos el impacto que ha tenido en la accesibilidad, en tantos aspectos más allá del ocio. Tras muchos, muchos años de ponernos en contacto con desarrolladores, con una tasa de respuesta sorprendentemente baja, hemos decidido invertir nuestro dinero y nuestros esfuerzos en las herramientas que nos permitirán, de hecho, tomar las riendas del asunto. Somos conscientes tanto de las ventajas como de los inconvenientes de esta decisión, y entendemos que vuestros valores pueden diferir de los nuestros.</p>
+  </main>
+
+  <footer>
+    <p>GO Mods · <a href="https://www.patreon.com/oriolgomez">Oriol Gómez en Patreon</a> · <a href="https://github.com/gomods1">GitHub</a></p>
+  </footer>
+</body>
+</html>
