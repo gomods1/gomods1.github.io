@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GO Mods</title>
+  <meta name="description" content="GO Mods: screen reader accessibility mods that let blind gamers play the same games everybody else is playing.">
+  <style>
+    :root {
+      --bg: #fdfcf8;
+      --fg: #1c1c1c;
+      --muted: #555;
+      --accent: #0b5cad;
+      --accent-fg: #fff;
+      --rule: #ddd8cc;
+      --note-bg: #fff4d6;
+      --note-border: #c98a00;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --fg: #ececec;
+        --muted: #b4b4b4;
+        --accent: #7cb8ff;
+        --accent-fg: #0b1220;
+        --rule: #33363d;
+        --note-bg: #2b2412;
+        --note-border: #e0a82e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 1.125rem/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .skip {
+      position: absolute;
+      left: -9999px;
+    }
+    .skip:focus {
+      left: 1rem;
+      top: 1rem;
+      padding: .5rem 1rem;
+      background: var(--accent);
+      color: var(--accent-fg);
+      z-index: 10;
+    }
+    header, main, footer {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    header { padding-top: 3rem; }
+    h1 { font-size: 2.5rem; line-height: 1.1; margin: 0 0 .5rem; }
+    h2 {
+      font-size: 1.6rem;
+      margin: 3rem 0 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    h3 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+    .tagline { color: var(--muted); margin: 0 0 1.5rem; }
+    a { color: var(--accent); text-underline-offset: .15em; }
+    a:focus-visible, .button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .button {
+      display: inline-block;
+      padding: .6rem 1.2rem;
+      border-radius: .4rem;
+      background: var(--accent);
+      color: var(--accent-fg);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .note {
+      background: var(--note-bg);
+      border-left: 4px solid var(--note-border);
+      padding: .75rem 1rem;
+      font-weight: 600;
+    }
+    li { margin-bottom: .4rem; }
+    footer {
+      margin-top: 4rem;
+      padding-bottom: 3rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <h1>GO Mods</h1>
+    <p class="tagline">Accessibility mods for blind gamers, by Oriol Gómez and Guillem León.</p>
+    <p><a class="button" href="https://www.patreon.com/oriolgomez">Support us on Patreon</a></p>
+  </header>
+
+  <main id="main">
+    <p class="note">Full AI/LLM disclosure and disclaimer <a href="#ai-disclaimer">below</a>!</p>
+
+    <p>Hello! We are Oriol Gómez and Guillem León, and we are here to provide blind gamers with an enjoyable experience for the same games everybody else is playing!</p>
+
+    <p>We can have a nuanced discussion about the ethics of LLM training and inference any day of the week—and we absolutely will if you want us to, it is very important! But for the purposes of this space, LLMs have been an invaluable tool and a gigantic step forward in the quest to make more videogames accessible to blind players. The amount of resources spent on the creation of videogames is many orders of magnitude higher than for audiogames, and videogames are played by amounts of people many orders of magnitude higher than audiogames. Investing in equal access to the former allows us to enjoy much more similar experiences to those our sighted peers do. Apart from the loads of personal enjoyment that this brings, it also helps to significantly narrow the gap between blind and mainstream gaming, enabling us to participate in the social aspect of it in the process!</p>
+
+    <p>We stand on the shoulders of giants. Even before the widespread adoption of LLMs, projects such as Pokemon Crystal Access, Stardew Access, Say the Spire and Black Hole (and a good few more!) were already bringing accessibility for the blind to major mainstream titles. With the help of coding agents, countless titles are gaining varying levels of accessibility by the week.</p>
+
+    <p>We're here to do our best to add to the pool in a meaningful and thorough way!</p>
+
+    <h2 id="who-are-we">Who are we?</h2>
+
+    <h3 id="oriol">Oriol</h3>
+
+    <p>My game development career started back in 2011 with Death on the road, or roadsplat. That was my first of many games, first audiogames, then games for iOS, and later some mods.</p>
+
+    <p>I have a small website dedicated to my games, software and projects.</p>
+
+    <p>Since the rise of AI, I have found myself coding a bit less and inventing a bit more. I have made mods for several games including:</p>
+
+    <ul>
+      <li><a href="https://github.com/ogomez92/monster_tra11y">Monster Train</a>, a gothic style roguelike about unit management.</li>
+      <li><a href="https://github.com/ogomez92/SNKRX">SNKRX</a>, an arena shooter / roguelike.</li>
+      <li><a href="https://github.com/ogomez92/blindfrost">Wildfrost</a>, a roguelike about cute creatures trying to kill each other on a grid.</li>
+      <li><a href="https://github.com/ogomez92/verbally_blind_cultist">Cultist Simulator</a>, a roguelike about gaining followers and becoming a cultist.</li>
+    </ul>
+
+    <p>When I'm not making mods, I'm either coding other projects, reading, watching some good shows or, of course, playing games other people have developed, such as Slay the Spire or Darkest Dungeon.</p>
+
+    <p>In this team, my hope is to continue creating more mods, provide new ideas, the resources, and the drive to experiment with new games and concepts. My greatest asset here is finding creative solutions to problems and not giving up easily, as well as my desire to give our users (players) what they will enjoy from a game or mod.</p>
+
+    <h3 id="guillem">Guillem</h3>
+
+    <p>If anybody asks, I'm a <a href="https://guillemleonmusic.com">Pianist and Composer</a> by trade. But when I get tired of sitting in front of a piano or a DAW (which happens more quickly and regularly than I'd like) gaming is one of my favorite pastimes.</p>
+
+    <p>I will try any game once, but roguelikes of practically any kind are my go-to right now.</p>
+
+    <p>In this team, my insufferable nitpicky perfectionist tendencies are turned into my greatest asset. I love tracking down inconsistencies, finding better and more efficient ways to convey information, testing edge cases and, most of everything, making sure I understand exactly what's happening in a game.</p>
+
+    <h2 id="funding">What will you be funding?</h2>
+
+    <p>Primarily, LLM costs. As you will see in the below disclaimer, their reverse-engineering ability and resilience to tedious analysis work makes them a very useful tool in this space. At the time of writing, LLM subscriptions are the most effective and affordable way to access them.</p>
+
+    <p>Additionally, you will be investing in the time we spend in the various phases of AI-assisted mod development:</p>
+
+    <ul>
+      <li>Researching games with modding potential</li>
+      <li>Evaluating the best ways to add accessibility with minimal change to the gameplay experience</li>
+      <li>Prompting and supervising an initial approach</li>
+      <li>Playtesting and thoroughly noting down bugs, inconsistencies and potential improvements</li>
+      <li>Sanitizing and running prompts to address them until we consider the experience to be fun</li>
+      <li>Maintaining mods after their launch, making sure the community is kept in the loop</li>
+    </ul>
+
+    <h2 id="rewards">What will you get?</h2>
+
+    <p>Moving forward, patrons will have access to new mods and major quality-of-life updates one week before they are made publicly available. Critical bug fixes will be released to the public immediately without the one-week waiting period. Oriol's past mods (see above) will now be part of the GO Mods roster.</p>
+
+    <p>Patrons will also have access to a Discord server to discuss the available mods, suggest new games, and keep up with our work.</p>
+
+    <p>None of our mods will ever be exclusively paywalled. All of the code for any mods we make will be made publicly available after the patron period without exception.</p>
+
+    <p><a class="button" href="https://www.patreon.com/oriolgomez">Become a patron</a></p>
+
+    <h2 id="ai-disclaimer">AI disclaimer</h2>
+
+    <p>The great majority of our code, and certainly the initial approach to our mods, is written by large language models. We do not claim true ownership of the code, only of the design ideas.</p>
+
+    <p>We believe that there is such a thing as fair use of AI and in the impact that it has had on accessibility, in so many aspects besides leisure. After many, many years of reaching out to developers with an astoundingly low response rate, we have decided to put our money and efforts into the tools that will indeed allow us to take matters into our own hands. We are aware of both the pros and the cons of this decision, and we understand that your values may differ from ours.</p>
+  </main>
+
+  <footer>
+    <p>GO Mods · <a href="https://www.patreon.com/oriolgomez">Patreon</a> · <a href="https://github.com/gomods1">GitHub</a></p>
+  </footer>
+</body>
+</html>
